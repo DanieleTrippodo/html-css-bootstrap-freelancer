@@ -2,3 +2,26 @@
     background-color: aquamarine;
     color: white;
 }
+
+
+.my_flex_centered{
+    display: flex;
+    justify-content: center;
+}
+
+
+.my_link_nav{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+}
+
+.my_leftspace_nav{
+    padding-left: 64%;
+}
+
+
+.my_low_leftspace_nav{
+    padding-left: 18%;
+}

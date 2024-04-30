@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,33 +26,57 @@
     <!-- -header ----------------------------- -->
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(31, 51, 71);">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Start Bootstrap</a>
-
-                <span class="navbar-text">
-                  Navbar text with an inline element
-                </span>
-
-            </div>
-          </nav>
+      <!-- # Navbar dinamica -->
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(31, 51, 71);">
+        <div class="container-fluid my_low_leftspace_nav">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 my_leftspace_nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     </header>
     <!-- -header --------FINE----------------- -->
-
-
-    
 
 
 
     <!-- -main -------------------------------------------- -->
     <main>
 
+      <!-- # Primo elemento con sfondo verde - Jumbotron -->
+      <!-- riga di 12 Bootstrap -->
+      <div class="container-fluid text-center my_background_green">
+            <div class="row my_flex_centered">
 
-        <!-- # Primo elemento con sfondo verde - Jumbotron -->
-        <!-- riga di 12 Bootstrap -->
-        <div class="container-fluid text-center my_background_green">
-            <div class="row">
+              <div class="col-4">
+                <img src="./img/avatar.svg" alt="rest"> <!-- prima immagine del jumbo -->
+              </div>
+
               <div class="col-12">
                 Start Bootstrap <!-- primo elemento -->
               </div>
@@ -65,16 +89,13 @@
                 Artist - Web Designer - Illustrator <!-- primo elemento -->
               </div>
             </div>
-          </div>
+      </div>
 
           
-          
-
-
-
-          <!-- #sezione con immagini -->
+      <!-- #sezione con immagini -->
+      <section class="mx-auto p-2" style="width: 700px;">
           <!-- riga di 12 Bootstrap -->
-          <div class="container text-center my-3">
+            <div class="container text-center p-5">
               <div class="row">
                 <div class="col-12" style="font-size: xx-large;">
                   Portfolio <!-- titolo-->
@@ -93,14 +114,14 @@
                 </div>
               </div>
             </div>
+      </section>
 
 
-
-
-            <!-- # sezione ABOUT -->
-            <div class="container-fluid text-center my_background_green">
+      <!-- # sezione ABOUT -->
+      <section>
+              <div class="container-fluid text-center my_background_green p-5">
                 <div class="row">
-                    <div class="col-12 text-center" style="font-size: xx-large;">
+                    <div class="col-12 text-center mb-4" style="font-size: xx-large;">
                         About <!-- titolo-->
                     </div>
 
@@ -111,12 +132,13 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur at maiores magni hic iste omnis saepe illum reiciendis est voluptates, debitis repudiandae eum, rerum, recusandae necessitatibus neque. Necessitatibus, aspernatur iusto.
                   </div>
                 </div>
-            </div>
+              </div>
+      </section>
 
 
-
-            <section class="mx-auto p-2" style="width: 700px;">
-                <!-- # sezione FAQ oppure Contact Me -->
+      <!-- # sezione FAQ oppure Contact Me -->
+      <section class="mx-auto p-2" style="width: 700px;">
+                
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="col-12 text-center" style="font-size: xx-large;">
                         Contact Me <!-- titolo-->
@@ -155,36 +177,42 @@
                         <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                     </div>
                     </div>
-            </section>
+      </section>
 
-                <!-- #box commenti -->
-                <section class="mx-auto p-2" style="width: 700px;">
+
+      <!-- # box commenti -->
+      <section class="mx-auto p-2" style="width: 700px;">
                     <!-- Sezione commenti -->
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-                        <label for="floatingTextarea2">Message</label>
-                    </div>
+                    <form class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                      <label for="floatingTextarea2">Message</label>
 
-                    <!-- bottone per inviare il commento -->
-                    <button type="button" class="btn btn-success my-3">Send</button>
-                </section>
+                      <!-- bottone per inviare il commento -->
+                      <button type="button" class="btn btn-success my-3">Send</button>
+                    </form>
 
-
+                    
+      </section>
 
     </main>
     <!-- -main ---------------FINE------------------------- -->
 
 
 
-
-
     <!-- -footer ------------------------------ -->
     <footer>
+
+      <section>
+          
+      </section>
 
     </footer>
     <!-- -footer ---------FINE----------------- -->
 
 
 
+    <!-- import javascript from Bootstrap framework (important place on the end of the body!) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
