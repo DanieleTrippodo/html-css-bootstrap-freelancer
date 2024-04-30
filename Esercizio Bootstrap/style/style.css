@@ -21,7 +21,44 @@
     padding-left: 64%;
 }
 
+.my_leftspace{
+    margin-left: 2rem;
+}
+
+.my_rightspace{
+    margin-right: 2rem;
+}
+
 
 .my_low_leftspace_nav{
     padding-left: 18%;
 }
+ 
+.my_bottomspace{
+    padding-bottom: 4.3rem;
+}
+
+.my_topspace{
+    padding-top: 3rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    
+    .my_leftspace_nav{
+        padding-left: 2rem;
+    }
+
+
+    .my_low_leftspace_nav{
+        padding-left: 1rem;
+    }
+
+    
+  }
+  
